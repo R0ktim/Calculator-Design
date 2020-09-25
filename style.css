@@ -1,0 +1,130 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#container{
+    background: #dde1e7;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: #dde1e7;
+    width: 17rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 4rem );
+    grid-template-areas:"display    display     display     display"
+                        "clear      back        persantage  devide"
+                        "seven      eight       nine        multply"
+                        "four       five        six         minus"
+                        "one        two         three       plus"
+                        "zero       dot         equalto     plus";
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 288);
+}
+
+#display{
+    background: #d0b8b8;
+    margin: 0.25rem;
+    border-radius: 2rem;
+    grid-area: display;
+    box-shadow: inset 3px 3px 5px rgba(94, 104, 121, 288), -3px -3px 7px #ffffff73 ;
+}
+
+.buttons{
+    background: #dde1e7;
+    margin: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 288);
+}
+
+.clear{
+    grid-area: clear;
+}
+
+.back{
+    grid-area: back;
+}
+
+.persantage{
+    grid-area: persantage;
+}
+
+.devide{
+    grid-area: devide;
+}
+
+.multiply{
+    grid-area: multply;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.plus{
+    grid-area: plus;
+    border-radius: 2rem;
+}
+
+.equalto{
+    grid-area: equalto;
+}
+
+.dot{
+    grid-area: dot;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.one{
+    grid-area:one;
+}
+
+.two{
+    grid-area:two;
+}
+
+.three{
+    grid-area:three;
+}
+
+.four{
+    grid-area:four;
+}
+
+.five{
+    grid-area:five;
+}
+
+.six{
+    grid-area:six
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eight{
+    grid-area:eight;
+}
+
+.nine{
+    grid-area:nine;
+}
